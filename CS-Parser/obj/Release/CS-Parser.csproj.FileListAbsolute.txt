@@ -1,0 +1,14 @@
+C:\Users\macto\source\repos\CS-Parser\CS-Parser\bin\Release\CS-Parser.exe.config
+C:\Users\macto\source\repos\CS-Parser\CS-Parser\bin\Release\CS-Parser.exe
+C:\Users\macto\source\repos\CS-Parser\CS-Parser\bin\Release\CS-Parser.pdb
+C:\Users\macto\source\repos\CS-Parser\CS-Parser\bin\Release\OpenWeatherAPI.dll
+C:\Users\macto\source\repos\CS-Parser\CS-Parser\bin\Release\Newtonsoft.Json.dll
+C:\Users\macto\source\repos\CS-Parser\CS-Parser\bin\Release\OpenWeatherAPI.pdb
+C:\Users\macto\source\repos\CS-Parser\CS-Parser\obj\Release\CS-Parser.csprojAssemblyReference.cache
+C:\Users\macto\source\repos\CS-Parser\CS-Parser\obj\Release\CS_Parser.WeatherForm.resources
+C:\Users\macto\source\repos\CS-Parser\CS-Parser\obj\Release\CS_Parser.Properties.Resources.resources
+C:\Users\macto\source\repos\CS-Parser\CS-Parser\obj\Release\CS-Parser.csproj.GenerateResource.cache
+C:\Users\macto\source\repos\CS-Parser\CS-Parser\obj\Release\CS-Parser.csproj.CoreCompileInputs.cache
+C:\Users\macto\source\repos\CS-Parser\CS-Parser\obj\Release\CS-Parser.csproj.CopyComplete
+C:\Users\macto\source\repos\CS-Parser\CS-Parser\obj\Release\CS-Parser.exe
+C:\Users\macto\source\repos\CS-Parser\CS-Parser\obj\Release\CS-Parser.pdb
