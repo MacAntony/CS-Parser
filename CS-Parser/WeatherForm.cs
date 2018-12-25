@@ -27,7 +27,7 @@ namespace CS_Parser
                 var city = input.Text;
                 var results = client.Query(city);
 
-                Console.WriteLine($"Температура в {city}  {results.Main.Temperature.FahrenheitCurrent}F. Прошло времени {results.Wind.SpeedFeetPerSecond} ");
+                Console.WriteLine($"Температура в {city}  {results.Main.Temperature.FahrenheitCurrent}F.");
                 output.Text = results.Main.Temperature.FahrenheitCurrent.ToString();
                 SystemSounds.Beep.Play();
             }
