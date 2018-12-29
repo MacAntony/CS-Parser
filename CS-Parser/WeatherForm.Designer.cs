@@ -1,4 +1,4 @@
-﻿namespace CS_Parser
+﻿namespace Parser
 {
     partial class WeatherForm
     {
@@ -28,67 +28,116 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(WeatherForm));
+            this.temperatureButton = new System.Windows.Forms.Button();
+            this.outputF = new System.Windows.Forms.TextBox();
+            this.labelF = new System.Windows.Forms.Label();
+            this.timer = new System.Windows.Forms.Timer(this.components);
+            this.label = new System.Windows.Forms.Label();
             this.input = new System.Windows.Forms.TextBox();
-            this.output = new System.Windows.Forms.TextBox();
+            this.outputC = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // button1
+            // temperatureButton
             // 
-            this.button1.Location = new System.Drawing.Point(66, 111);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(118, 68);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Узнать температуру";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.temperatureButton.Location = new System.Drawing.Point(28, 139);
+            this.temperatureButton.Name = "temperatureButton";
+            this.temperatureButton.Size = new System.Drawing.Size(160, 27);
+            this.temperatureButton.TabIndex = 0;
+            this.temperatureButton.Text = "Узнать температуру";
+            this.temperatureButton.UseVisualStyleBackColor = true;
+            this.temperatureButton.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // outputF
+            // 
+            this.outputF.Location = new System.Drawing.Point(47, 84);
+            this.outputF.Name = "outputF";
+            this.outputF.Size = new System.Drawing.Size(118, 20);
+            this.outputF.TabIndex = 2;
+            // 
+            // labelF
+            // 
+            this.labelF.AutoSize = true;
+            this.labelF.Location = new System.Drawing.Point(171, 84);
+            this.labelF.Name = "labelF";
+            this.labelF.Size = new System.Drawing.Size(17, 13);
+            this.labelF.TabIndex = 3;
+            this.labelF.Text = "F°";
+            // 
+            // timer
+            // 
+            this.timer.Tick += new System.EventHandler(this.timer_Tick);
+            // 
+            // label
+            // 
+            this.label.AutoSize = true;
+            this.label.Location = new System.Drawing.Point(25, 13);
+            this.label.Name = "label";
+            this.label.Size = new System.Drawing.Size(174, 13);
+            this.label.TabIndex = 8;
+            this.label.Text = "Название города (на англиском)";
             // 
             // input
             // 
-            this.input.Location = new System.Drawing.Point(66, 63);
+            this.input.Location = new System.Drawing.Point(47, 29);
             this.input.Name = "input";
             this.input.Size = new System.Drawing.Size(118, 20);
-            this.input.TabIndex = 1;
+            this.input.TabIndex = 7;
             // 
-            // output
+            // outputC
             // 
-            this.output.Location = new System.Drawing.Point(66, 85);
-            this.output.Name = "output";
-            this.output.Size = new System.Drawing.Size(118, 20);
-            this.output.TabIndex = 2;
+            this.outputC.Location = new System.Drawing.Point(47, 110);
+            this.outputC.Name = "outputC";
+            this.outputC.Size = new System.Drawing.Size(118, 20);
+            this.outputC.TabIndex = 9;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(190, 85);
+            this.label1.Location = new System.Drawing.Point(171, 110);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(13, 13);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "F";
+            this.label1.Size = new System.Drawing.Size(18, 13);
+            this.label1.TabIndex = 10;
+            this.label1.Text = "C°";
             // 
-            // label2
+            // notifyIcon1
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(99, 47);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(60, 13);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "Ваш город";
+            this.notifyIcon1.Icon = ((System.Drawing.Icon)(resources.GetObject("notifyIcon1.Icon")));
+            this.notifyIcon1.Text = "notifyIcon1";
+            this.notifyIcon1.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.notifyIcon1_MouseDoubleClick);
             // 
-            // Form1
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(47, 55);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(118, 23);
+            this.button1.TabIndex = 11;
+            this.button1.Text = "Определить город";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            // 
+            // WeatherForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(255, 199);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.output);
-            this.Controls.Add(this.input);
+            this.ClientSize = new System.Drawing.Size(217, 172);
             this.Controls.Add(this.button1);
-            this.Name = "Form1";
-            this.Text = "WeatherForm";
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.outputC);
+            this.Controls.Add(this.label);
+            this.Controls.Add(this.input);
+            this.Controls.Add(this.labelF);
+            this.Controls.Add(this.outputF);
+            this.Controls.Add(this.temperatureButton);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Name = "WeatherForm";
+            this.Text = "Weather";
+            this.Load += new System.EventHandler(this.WeatherForm_Load);
+            this.Resize += new System.EventHandler(this.WeatherForm_Resize);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -96,11 +145,16 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button temperatureButton;
+        private System.Windows.Forms.TextBox outputF;
+        private System.Windows.Forms.Label labelF;
+        private System.Windows.Forms.Timer timer;
+        private System.Windows.Forms.Label label;
         private System.Windows.Forms.TextBox input;
-        private System.Windows.Forms.TextBox output;
+        private System.Windows.Forms.TextBox outputC;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.NotifyIcon notifyIcon1;
+        private System.Windows.Forms.Button button1;
     }
 }
 
