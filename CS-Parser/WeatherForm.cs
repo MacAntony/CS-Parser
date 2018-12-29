@@ -31,6 +31,12 @@ namespace Parser
                 outputF.Text = results.Main.Temperature.FahrenheitCurrent.ToString();
                 outputC.Text = Convert.ToString(Formula(results.Main.Temperature.FahrenheitCurrent));
                 timer.Enabled = true;
+
+                var city = input.Text;
+                var results = client.Query(city);
+
+                Console.WriteLine($"Температура в {city}  {results.Main.Temperature.FahrenheitCurrent}F.");
+                output.Text = results.Main.Temperature.FahrenheitCurrent.ToString();
                 SystemSounds.Beep.Play();
             }
             catch (Exception ex)
