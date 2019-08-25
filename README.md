@@ -1,2 +1,2 @@
 # CS-Parser
-Небольшой парсер на основе Open Weather Api.
+Небольшой погодный менеджер на основе Open Weather Api.
